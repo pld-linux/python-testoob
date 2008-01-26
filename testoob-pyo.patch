@@ -1,0 +1,11 @@
+--- testoob-1.13/src/testoob/commandline/__init__.py.orig	2008-01-21 14:53:24.000000000 +0100
++++ testoob-1.13/src/testoob/commandline/__init__.py	2008-01-21 14:54:05.000000000 +0100
+@@ -7,7 +7,7 @@
+     return os.path.dirname(__file__)
+ 
+ def option_file_glob_pattern():
+-    return os.path.join(current_path(), "*_option.py")
++    return os.path.join(current_path(), "*_option.pyo")
+ 
+ def module_list():
+     return [
