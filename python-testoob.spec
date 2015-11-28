@@ -33,8 +33,7 @@ do testów PyUnit (moduł "unittest").
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--root=$RPM_BUILD_ROOT \
+%py_install \
 	--install-purelib=%{py_sitedir}
 
 %py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
