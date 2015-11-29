@@ -11,6 +11,7 @@ Source0:	http://dl.sourceforge.net/testoob/%{pname}-%{version}.tar.gz
 # Source0-md5:	92cbf328647488ed21a55cfe0f74b2cf
 Patch0:		%{pname}-pyo.patch
 URL:		http://testoob.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:  rpm-pythonprov
 %pyrequires_eq  python-modules
 BuildArch:      noarch
