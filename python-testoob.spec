@@ -29,7 +29,7 @@ do testów PyUnit (moduł "unittest").
 
 %prep
 %setup -q -n %{pname}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
